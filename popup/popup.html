@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>QR Code Generator</title>
+  <link rel="stylesheet" href="popup.css">
+  <script src="../lib/qrcode.min.js"></script>
+  <script src="popup.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>QR Code Generator</h1>
+    <div id="qrcode-container">
+      <div id="qrcode"></div>
+    </div>
+    <div id="text-container">
+      <p id="qr-text"></p>
+    </div>
+    <div class="buttons">
+      <button id="download-btn">Download QR Code</button>
+      <button id="copy-btn">Copy to Clipboard</button>
+    </div>
+  </div>
+</body>
+</html>
