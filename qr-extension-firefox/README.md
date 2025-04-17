@@ -1,6 +1,6 @@
-# QR Code Generator Browser Extension
+# QR Code Generator Firefox Extension
 
-This Browser extension allows you to quickly generate QR codes from selected text, links, or clipboard content. It works in both Chrome and Firefox.
+This Firefox extension allows you to quickly generate QR codes from selected text, links, or clipboard content.
 
 ## Features
 
@@ -13,26 +13,10 @@ This Browser extension allows you to quickly generate QR codes from selected tex
 
 ### Prerequisites
 
-- Google Chrome or Firefox browser
+- Firefox browser
 - Visual Studio Code
 
-### Chrome Setup Instructions
-
-1. Clone or download this repository to your local machine
-
-2. Open the project in Visual Studio Code:
-   ```
-   code qr-extension
-   ```
-
-3. Load the extension in Chrome:
-   - Open Chrome and navigate to `chrome://extensions/`
-   - Enable "Developer mode" using the toggle in the top-right corner
-   - Click "Load unpacked" and select the `qr-extension-chrome` folder
-
-4. The extension should now be installed and visible in your Chrome toolbar
-
-### Firefox Setup Instructions
+### Setup Instructions
 
 1. Clone or download this repository to your local machine
 
@@ -45,7 +29,6 @@ This Browser extension allows you to quickly generate QR codes from selected tex
    - Open Firefox and navigate to `about:debugging#/runtime/this-firefox`
    - Click "Load Temporary Add-on..."
    - Select the `manifest.json` file in the `qr-extension-firefox` folder
-   - The extension will be loaded temporarily and will remain until Firefox is restarted
 
 4. The extension should now be installed and visible in your Firefox toolbar
 
@@ -61,3 +44,6 @@ This Browser extension allows you to quickly generate QR codes from selected tex
 - `popup/`: Contains the UI for displaying QR codes
 - `lib/`: Contains the QRCode.js library for generating QR codes
 
+## License
+
+This project uses the QRCode.js library which is licensed under the MIT license.

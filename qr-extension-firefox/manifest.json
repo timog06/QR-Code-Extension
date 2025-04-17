@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "QR Code Generator",
+  "version": "1.0.1",
+  "description": "Generate QR codes from selected text, links, or clipboard content",
+  "permissions": ["contextMenus", "clipboardRead", "storage", "notifications", "activeTab", "tabs"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_popup": "popup/popup.html"
+  },
+  "commands": {
+    "generate-qr": {
+      "suggested_key": {
+        "default": "Alt+Shift+Q",
+        "mac": "Command+Shift+Q"
+      },
+      "description": "Generate QR code from selected text"
+    }
+  }
+}
